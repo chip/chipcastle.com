@@ -6,6 +6,7 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
+var concatCss = require('gulp-concat-css');
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -29,7 +30,7 @@ gulp.task('less', function() {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['less'], function() {
-    return gulp.src('css/freelancer.css')
+    return gulp.src('css/styles.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('css'))
@@ -69,8 +70,15 @@ gulp.task('copy', function() {
         .pipe(gulp.dest('vendor/font-awesome'))
 })
 
-// Run everything
-gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
+gulp.task('concat-css', function () {
+  return gulp.src([
+      'vendor/bootstrap/css/bootstrap.min.css',
+      'css/freelancer.min.css',
+      'vendor/font-awesome/css/font-awesome.min.css'
+    ])
+    .pipe(concatCss("styles.css"))
+    .pipe(gulp.dest('tmp/css'));
+});
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -82,9 +90,9 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() {
+gulp.task('default', ['browserSync', 'less', 'concat-css', 'minify-css', 'minify-js'], function() {
     gulp.watch('less/*.less', ['less']);
-    gulp.watch('css/*.css', ['minify-css']);
+    gulp.watch('css/*.css', ['concat-css', 'minify-css']);
     gulp.watch('js/*.js', ['minify-js']);
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('*.html', browserSync.reload);
