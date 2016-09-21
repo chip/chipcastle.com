@@ -3,10 +3,10 @@ var less = require('gulp-less');
 var browserSync = require('browser-sync').create();
 var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
-var rename = require("gulp-rename");
+var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
-var concatCss = require('gulp-concat-css');
+var concat = require('gulp-concat');
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -30,7 +30,7 @@ gulp.task('less', function() {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['less'], function() {
-    return gulp.src('css/styles.css')
+    return gulp.src('css/freelancer.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('css'))
@@ -68,6 +68,11 @@ gulp.task('copy', function() {
             '!node_modules/font-awesome/*.json'
         ])
         .pipe(gulp.dest('vendor/font-awesome'))
+
+    gulp.src([
+            'node_modules/font-awesome/fonts/**'
+        ])
+        .pipe(gulp.dest('fonts'))
 })
 
 gulp.task('concat-css', function () {
@@ -76,8 +81,8 @@ gulp.task('concat-css', function () {
       'css/freelancer.min.css',
       'vendor/font-awesome/css/font-awesome.min.css'
     ])
-    .pipe(concatCss("styles.css"))
-    .pipe(gulp.dest('tmp/css'));
+    .pipe(concat('styles.min.css'))
+    .pipe(gulp.dest('css'));
 });
 
 // Configure the browserSync task
@@ -90,9 +95,9 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('default', ['browserSync', 'less', 'concat-css', 'minify-css', 'minify-js'], function() {
+gulp.task('default', ['browserSync', 'copy', 'less', 'minify-css', 'concat-css', 'minify-js'], function() {
     gulp.watch('less/*.less', ['less']);
-    gulp.watch('css/*.css', ['concat-css', 'minify-css']);
+    gulp.watch('css/*.css', ['minify-css', 'concat-css']);
     gulp.watch('js/*.js', ['minify-js']);
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('*.html', browserSync.reload);
