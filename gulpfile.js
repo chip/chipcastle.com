@@ -85,6 +85,17 @@ gulp.task('concat-css', function () {
     .pipe(gulp.dest('css'));
 });
 
+gulp.task('concat-js', function () {
+  return gulp.src([
+      'vendor/jquery/jquery.min.js',
+      'vendor/bootstrap/js/bootstrap.min.js',
+      'vendor/jquery-easing/jquery.easing.min.js',
+      'js/freelancer.min.js'
+    ])
+    .pipe(concat('scripts.min.js'))
+    .pipe(gulp.dest('js'));
+});
+
 // Configure the browserSync task
 gulp.task('browserSync', function() {
     browserSync.init({
@@ -95,10 +106,10 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('default', ['browserSync', 'copy', 'less', 'minify-css', 'concat-css', 'minify-js'], function() {
+gulp.task('default', ['browserSync', 'copy', 'less', 'minify-css', 'concat-css', 'minify-js', 'concat-js'], function() {
     gulp.watch('less/*.less', ['less']);
     gulp.watch('css/*.css', ['minify-css', 'concat-css']);
-    gulp.watch('js/*.js', ['minify-js']);
+    gulp.watch('js/*.js', ['minify-js', 'concat-js']);
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('*.html', browserSync.reload);
     gulp.watch('js/**/*.js', browserSync.reload);
