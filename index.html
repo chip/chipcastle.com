@@ -14,18 +14,7 @@
 
     <title>Chip Castle Dot Com, Inc. - Website design and development</title>
 
-		<script>
-			var cb = function() {
-			  var l = document.createElement('link');
-        l.rel = 'stylesheet';
-			  l.href = 'css/styles.min.css';
-			  var h = document.getElementsByTagName('head')[0];
-        h.parentNode.insertBefore(l, h);
-			};
-			var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
-			if (raf) raf(cb);
-			else window.addEventListener('load', cb);
-		</script>
+    <link href="css/styles.min.css" rel="stylesheet">
 
     <link
     href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
