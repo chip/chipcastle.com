@@ -611,8 +611,7 @@
     </div>
 
 	<script type="text/javascript">
-    const myHeaders = new Headers();
-    const host = myHeaders.get("Host");
+    const host = window.location.host;
     console.log("host", host);
     if (host == "unix.chipcastle.com") {
       window.location.href = "https://unixcasts.com";
