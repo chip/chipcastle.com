@@ -1,0 +1,4 @@
+ # This will redirect a subdomain to another domain
+ RewriteEngine On
+ RewriteCond %{HTTP_HOST} ^unix\.chipcastle\.com$ [NC]
+ RewriteRule ^(.*) http://unixcasts.com/$1 [L,R]
