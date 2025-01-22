@@ -101,6 +101,17 @@
                       <li>Copy the <code>export PATH</code> statement to the MacOS clipboard.</li>
                       <li>Provide a separate tab for viewing all environment variables for the current user.</li>
                     </ul>
+
+                    <h4>PATH commands</h4>
+                    <p>The PATH environment variable can be obtained from a variety of commands.</p>
+                    <p>The following commands are currently supported:</p>
+                    <ul>
+                      <li><code>printenv PATH</code></li>
+                      <li><code>/usr/libexec/path_helper -s</code></li>
+                      <li><code>zsh -i -c 'echo $PATH'</code></li>
+                      <li><code>zsh -l -c 'echo $PATH'</code></li>
+                      <li><code>zsh -li -c 'echo $PATH'</code></li>
+                    </ul>
                   </p>
                 </div>
 
