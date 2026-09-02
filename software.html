@@ -1,195 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Chip Castle is a full-stack web developer,
-    specializing in Javascript, Ruby on Rails and Linux Systems Administration">
-    <meta name="author" content="Chip Castle">
-    <meta name="robots" content="index,follow">
-
-    <title>Web & software development - Chip Castle Dot Com, Inc.</title>
-
-    <link href="css/styles.min.css" rel="stylesheet">
-
-    <link
-    href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Software — Chip Castle Dot Com, Inc.</title>
+<meta name="description" content="Stockpile, Pathos CLI, and Unix learning resources by Chip Castle — terminal tools and courses for macOS and Linux.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body id="page-top" class="index">
-
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="/#page-top">CHIP CASTLE DOT COM, INC.</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="/#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="/#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="/software.html">Software</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a
-                          href="https://github.com/chip"
-                          alt="Github profile for chip"
-                          class="btn-social"
-                        >
-                          <i class="fa fa-github"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="https://chipcastle.com/img/logo-round-light-blue-256x256.png" alt="">
+      chip castle
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html#history">History</a>
+      <a href="software.html" aria-current="page">Software</a>
+      <a href="https://github.com/chip">github.com/chip</a>
     </nav>
+  </div>
+</header>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                  <!-- ===================== Pathos CLI ===================== -->
-                  <section>
-                    <h2>Pathos CLI</h2>
-                    <hr>
+<main>
 
-                    <img src="img/Pathos-1200x800.png" alt="Pathos CLI: TUI editor for your shell PATH">
+  <section class="hero wrap">
+    <p class="prompt-line"><span class="sigil">chip@castle</span>:~$ ls software/<span class="cursor" aria-hidden="true"></span></p>
+    <h1>Software</h1>
+    <p class="lede">Terminal tools and Unix learning resources — built, sold, and supported directly.</p>
 
-                    <h3>Pathos CLI &mdash; a TUI editor for your shell PATH</h3>
-                    <p><strong>$19</strong></p>
-                    <p>A terminal UI for viewing and editing your shell <code>PATH</code> &mdash; reorder, add, or remove entries without hand-editing dotfiles.</p>
+    <ul class="dir-list">
+      <li class="dir-item">
+        <a href="#stockpile">stockpile/</a>
+        <span class="dir-desc">Manage and track packages from a terminal UI</span>
+      </li>
+      <li class="dir-item">
+        <a href="#pathos">pathos/</a>
+        <span class="dir-desc">A TUI editor for your shell PATH</span>
+      </li>
+      <li class="dir-item">
+        <a href="#unix-course">unix-course/</a>
+        <span class="dir-desc">Video course: the Unix command line on macOS</span>
+      </li>
+      <li class="dir-item">
+        <a href="#cheat-sheet">unixcasts-cheat-sheet/</a>
+        <span class="dir-desc">PDF reference, 50+ essential commands</span>
+      </li>
+    </ul>
+  </section>
 
-                    <a href="https://chipcastledotcom.gumroad.com/l/pathos">
-                      <img src="img/gumroad.webp" alt="Purchase Pathos CLI on Gumroad">
-                    </a>
+  <section class="product-block wrap" id="stockpile">
+    <p class="section-label"><span class="sigil">$</span>brew info stockpile</p>
+    <h2>Stockpile</h2>
+    <p class="product-tagline">A terminal UI for managing and tracking software packages on macOS and Linux.</p>
 
-                    <a href="https://chipcastledotcom.gumroad.com/l/pathos">Purchase on Gumroad</a>
-                  </section>
-
-                  <br />
-                  <!-- ===================== Stockpile ===================== -->
-                  <section>
-                    <h2>Stockpile</h2>
-                    <hr>
-
-                    <img src="img/Stockpile-1200x800.png" alt="Stockpile: A terminal UI application for managing and tracking software packages on macOS and Linux">
-
-                    <h3>Stockpile &mdash; A terminal UI application for managing and tracking software packages on macOS and Linux</h3>
-                    <p><strong>$39</strong></p>
-
-                    <a href="https://chipcastledotcom.gumroad.com/l/stockpile">
-                      <img src="img/gumroad.webp" alt="Purchase Stockpile on Gumroad">
-                    </a>
-
-                    <a href="https://chipcastledotcom.gumroad.com/l/stockpile">Purchase on Gumroad</a>
-                  </section>
-
-                  <br />
-                  <!-- ===================== UnixCasts Cheat Sheet ===================== -->
-                  <section>
-                    <h2>UnixCasts Cheat Sheet</h2>
-                    <hr>
-
-                    <img src="img/UnixCasts-Cheat-Sheet-1200x800.png" alt="UnixCasts Cheat Sheet cover">
-
-                    <h3>UnixCasts Cheat Sheet &mdash; 50+ essential commands PDF</h3>
-                    <p><strong>$5+</strong></p>
-                    <p>A quick-reference PDF covering 50+ essential Unix commands.</p>
-
-                    <a href="https://chipcastledotcom.gumroad.com/l/unixcasts-cheat-sheet">
-                      <img src="img/gumroad.webp" alt="Purchase UnixCasts Cheat Sheet on Gumroad">
-                    </a>
-
-                    <a href="https://chipcastledotcom.gumroad.com/l/unixcasts-cheat-sheet">Purchase on Gumroad</a>
-                  </section>
-
-
-                  <br />
-                  <!-- ===================== Unix Course ===================== -->
-                  <section>
-                    <h2>Learning the Unix Command Line on OSX (Apple Macintosh)</h2>
-                    <br />
-
-                    <img src="img/Unix-Course-1200x800.png" alt="Learning the Unix Command Line on OSX course cover">
-
-                    <h3>Learning the Unix Command Line on OSX (Apple Macintosh)</h3>
-                    <p>A course for getting comfortable with the command line on macOS.</p>
-
-                    <a href="https://chipcastledotcom.gumroad.com/l/unix-course">
-                      <img src="img/gumroad.webp" alt="Purchase the Unix Command Line course on Gumroad">
-                    </a>
-
-                    <a href="https://chipcastledotcom.gumroad.com/l/unix-course">Purchase on Gumroad</a>
-                  </section>
-    </header>
-
-    <!-- Footer -->
-    <footer class="text-center" id="contact">
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Chip Castle Dot Com, Inc.
-                        2016-2026
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="/#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
+    <div class="badges">
+      <span class="badge">macOS + Linux</span>
+      <span class="badge">Homebrew</span>
+      <span class="badge">Built with RatatuiRuby</span>
     </div>
 
-	<script type="text/javascript">
-    const host = window.location.host;
-    console.log("host", host);
-    if (host == "unix.chipcastle.com") {
-      window.location.href = "https://www.unixcasts.com";
-    }
-	</script>
+    <div class="btn-row" style="margin-bottom: 2.5rem;">
+      <a class="gumroad-cta" href="https://chipcastledotcom.gumroad.com/l/stockpile">
+        <img src="https://chipcastle.com/img/gumroad.webp" alt="Purchase Stockpile on Gumroad">
+      </a>
+      <a class="btn btn-secondary" href="https://github.com/chip/stockpile-demo">Demo on GitHub</a>
+    </div>
 
-	<script type="text/javascript">
-		function downloadJSAtOnload() {
-			var element = document.createElement("script");
-			element.src = "js/scripts.min.js";
-			document.body.appendChild(element);
-		}
-		if (window.addEventListener)
-			window.addEventListener("load", downloadJSAtOnload, false);
-		else if (window.attachEvent)
-			window.attachEvent("onload", downloadJSAtOnload);
-		else window.onload = downloadJSAtOnload;
-	</script>
+    <div class="term-window" style="margin-bottom: 2.5rem;">
+      <div class="term-titlebar">
+        <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
+      </div>
+      <img src="https://chipcastle.com/img/Stockpile-1200x800.png" alt="Stockpile terminal UI showing a two-column package list and detail view">
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-pane">
+        <h3><span class="sigil">pkg</span> Package management</h3>
+        <ul>
+          <li>Scans Homebrew and system packages</li>
+          <li>Real-time filtering across the package list</li>
+          <li>Two-column detail view for each package</li>
+          <li>Installed files and dependencies, at a glance</li>
+          <li>Registry persists automatically on exit</li>
+        </ul>
+      </div>
+
+      <div class="feature-pane">
+        <h3><span class="sigil">ui</span> Interface</h3>
+        <ul>
+          <li>Built on RatatuiRuby</li>
+          <li>Responsive two-column layout</li>
+          <li>Caching keeps rendering fast</li>
+          <li>Context-aware navbar with accurate key bindings</li>
+          <li>Built-in help — press <span class="mono">?</span></li>
+        </ul>
+      </div>
+
+      <div class="feature-pane">
+        <h3><span class="sigil">ops</span> Operations</h3>
+        <ul>
+          <li>Check for package updates</li>
+          <li>Upgrade one package or all of them at once</li>
+          <li>Uninstall packages</li>
+          <li>View brew info without leaving the app</li>
+          <li>Rebuild the registry when it needs it</li>
+        </ul>
+      </div>
+
+      <div class="feature-pane">
+        <h3><span class="sigil">dbg</span> Debugging &amp; reliability</h3>
+        <ul>
+          <li>Configurable debug logging</li>
+          <li>Automatic registry backup and recovery</li>
+          <li>Thread-safe, lazy-loaded package files</li>
+          <li>Detailed error logs when something goes wrong</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-block wrap" id="pathos">
+    <p class="section-label"><span class="sigil">$</span>pathos env</p>
+    <h2>Pathos CLI</h2>
+    <p class="product-tagline">A terminal UI editor for your shell PATH environment variable.</p>
+
+    <div class="badges">
+      <span class="badge">macOS + Linux</span>
+      <span class="badge">Built with RatatuiRuby</span>
+      <span class="badge price-tag">$19</span>
+    </div>
+
+    <p class="measure" style="margin-bottom: 1.75rem;">See every entry in your <span class="mono">$PATH</span> at once, spot what's missing or duplicated, and reorder or clean it up interactively — then save the result as a shell file that persists across sessions.</p>
+
+    <div class="btn-row" style="margin-bottom: 2rem;">
+      <a class="btn btn-primary" href="https://chipcastledotcom.gumroad.com/l/pathos">Buy on Gumroad — $19</a>
+    </div>
+
+    <ul class="feature-list-single">
+      <li>Full-screen TUI built on RatatuiRuby</li>
+      <li>Colour-coded entries: red for missing on disk, cyan for duplicate</li>
+      <li>Persists edits to a sourceable shell file, loaded on next launch</li>
+      <li>Add, delete, and reorder entries interactively</li>
+      <li>One-command deduplication</li>
+      <li>Undo any edit</li>
+      <li>Unsaved-changes indicator and quit confirmation</li>
+      <li><span class="mono">~</span> and <span class="mono">$VAR</span> expansion for existence checks</li>
+      <li>Full-path detail popup for truncated entries</li>
+      <li><span class="mono">pathos install</span> for one-time shell integration</li>
+      <li><span class="mono">pathos env</span> to print the current PATH for eval</li>
+    </ul>
+  </section>
+
+  <section class="product-block wrap" id="unix-course">
+    <p class="section-label"><span class="sigil">$</span>man unix</p>
+    <h2>Learning the Unix Command Line on macOS</h2>
+    <p class="product-tagline">A video course for anyone who owns a Mac and wants to actually know their way around it.</p>
+
+    <div class="badges">
+      <span class="badge">Video course</span>
+      <span class="badge">macOS</span>
+      <span class="badge price-tag">$49</span>
+    </div>
+
+    <div class="plain-shot">
+      <img src="https://public-files.gumroad.com/jt1mdvgvxylsans0k62moyabfrv0" alt="Learning the Unix Command Line on OSX course cover">
+    </div>
+
+    <p class="measure" style="margin-bottom: 1.75rem;">Decades after its creation, Unix still sits at the core of the internet and of computing in general. This course is built for programmers, designers, and systems engineers who own a Mac and want the command line to become second nature — by the end, you'll have the footing to keep learning the system on your own. More Unix content lives at <a href="https://www.unixcasts.com">unixcasts.com</a>.</p>
+
+    <div class="btn-row">
+      <a class="btn btn-primary" href="https://chipcastledotcom.gumroad.com/l/unix-course">Buy on Gumroad — $49</a>
+    </div>
+  </section>
+
+  <section class="product-block wrap" id="cheat-sheet">
+    <p class="section-label"><span class="sigil">$</span>cat cheatsheet.pdf</p>
+    <h2>UnixCasts Cheat Sheet</h2>
+    <p class="product-tagline">A print-ready PDF covering 50+ essential Unix commands.</p>
+
+    <div class="badges">
+      <span class="badge">PDF</span>
+      <span class="badge">50+ commands</span>
+      <span class="badge price-tag">$5</span>
+    </div>
+
+    <div class="plain-shot">
+      <img src="https://public-files.gumroad.com/snzylybs6o3dl327u62rs6tyv3xh" alt="UnixCasts Cheat Sheet preview">
+    </div>
+
+    <p class="measure" style="margin-bottom: 1.75rem;">Pulled straight from UnixCasts: the commands reached for most often at the terminal, laid out for a quick lookup or a spot on the wall next to your monitor.</p>
+
+    <div class="btn-row">
+      <a class="btn btn-primary" href="https://chipcastledotcom.gumroad.com/l/unixcasts-cheat-sheet">Buy on Gumroad — $5</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© Chip Castle Dot Com, Inc. 2016–2026</span>
+    <nav aria-label="Footer" class="footer-links">
+      <a href="index.html#history">History</a>
+      <a href="https://github.com/chip">GitHub</a>
+    </nav>
+  </div>
+</footer>
 
 </body>
-
 </html>

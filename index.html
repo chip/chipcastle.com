@@ -1,620 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Chip Castle is a full-stack web developer,
-    specializing in Javascript, Ruby on Rails and Linux Systems Administration">
-    <meta name="author" content="Chip Castle">
-    <meta name="robots" content="index,follow">
-
-    <title>Web & software development - Chip Castle Dot Com, Inc.</title>
-
-    <link href="css/styles.min.css" rel="stylesheet">
-
-    <link
-    href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chip Castle — Web &amp; software development</title>
+<meta name="description" content="Chip Castle is a full-stack developer specializing in Ruby on Rails, Javascript, and Unix systems administration, building software since 1994.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body id="page-top" class="index">
-
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">CHIP CASTLE DOT COM, INC.</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="/#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="/software.html">Software</a>
-                    </li>
-                    <li>
-                        <a
-                          href="https://github.com/chip"
-                          alt="Github profile for chip"
-                          class="btn-social"
-                        >
-                          <i class="fa fa-github"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#page-top">
+      <img src="https://chipcastle.com/img/logo-round-light-blue-256x256.png" alt="">
+      chip castle
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#history">History</a>
+      <a href="software.html">Software</a>
+      <a href="https://github.com/chip">github.com/chip</a>
     </nav>
+  </div>
+</header>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/logo-round-light-blue-256x256.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">Crafting software since 1994</span>
-                        <hr class="star-light">
-                        <span class="skills">Let us build your next app
-                        or website</span>
-                    </div>
-                </div>
-            </div>
+<main>
+
+  <section class="hero wrap" id="page-top">
+    <div class="hero-inner">
+      <img class="hero-logo" src="https://chipcastle.com/img/logo-round-light-blue-256x256.png" alt="Chip Castle logo" width="256" height="256">
+      <div class="hero-content">
+        <p class="prompt-line"><span class="sigil">chip@castle</span>:~$ whoami<span class="cursor" aria-hidden="true"></span></p>
+        <h1>Crafting software since 1994.</h1>
+        <p class="lede">Full-stack development in Ruby on Rails, Javascript, and Unix systems — for teams that need someone who's comfortable across the whole stack, from the server room to the browser.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#history">See the history</a>
+          <a class="btn btn-secondary" href="software.html">View software</a>
         </div>
-    </header>
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/nyu.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/unixcasts.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/skyo.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/impactplastics.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/bentmedia.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <!--
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/purecharity.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                -->
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/coffeecup.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3">
-
-                  <p>
-                    Since 1994, Chip Castle has been honing his craft of web
-                    &amp; software development, working with a wide variety of
-                    systems and tools. Currently, Chip focuses his efforts using
-                    <strong>Unix</strong> and <strong>Ruby on Rails</strong>.
-                  </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center" id="contact">
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Chip Castle Dot Com, Inc.
-                        2016-2026
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
+      </div>
     </div>
+  </section>
 
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>NYU School of Medicine</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/nyu.png" class="img-responsive img-centered" alt="">
-                            <div align="left">
-                              <p>
-                                For well over a decade, Chip assisted the
-                                Radiology Department of NYU School of
-                                Medicine with building, customizing, hosting
-                                and maintenance of their web-based
-                                scheduling software written using
-                                <strong>Perl</strong> on
-                                a <strong>Linux</strong> server.
-                                This software was used for
-                                managing time-slots for 4 MRI Magnet units
-                                and the associated billing with each of
-                                their research protocols.
-                              </p>
-                              <ul class="list-inline item-details">
-                                  <li>Client:
-                                      <strong>
-                                        <a
-                                        href="http://www.med.nyu.edu/radiology/department-radiology">NYU
-                                      Langone Medical Center</a>
-                                      </strong>
-                                  </li>
-                                  <li>Date:
-                                      <strong>
-                                        2003-2015
-                                      </strong>
-                                  </li>
-                                  <li>Service:
-                                      <strong>
-                                        Web Development
-                                      </strong>
-                                  </li>
-                              </ul>
-                            </div>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>unixcasts.com</h2>
-                            <hr class="star-primary">
-                        
-                            <a href="https://www.unixcasts.com">
-                              <img src="img/portfolio/unixcasts.png" class="img-responsive img-centered" alt="">
-                            </a>
-                            <p>
-                              UnixCasts.com is your source for learning the Unix Command Line!
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>
-                                    <strong>
-                                      <a href="https://www.unixcasts.com">unixcasts.com</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>
-                                      2014-2024
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>
-                                      Web Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Skyo</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/skyo.png" class="img-responsive img-centered" alt="">
-                            <div align="left">
-                              <p>
-                                For Skyo, Chip assisted development
-                                efforts of a large <strong>Ruby on
-                                  Rails</strong> codebase
-                                over the course of several years.
-                                Large strides were made to help refine
-                                <strong>Git</strong>
-                                branching workflow, code deployment and
-                                code review through using Github Pull
-                                Requests and establishing coding
-                                conventions.
-                              </p>
-                              <p>
-                                Other noteworthy accomplishments include
-                                reducing code complexity, bug squashing,
-                                communicating best practices for code
-                                refactoring, and customizing the Jenkins
-                                <strong>Continuous Integration</strong> (CI) system,
-                                eventually migrating to Semaphore, another
-                                popular CI cloud service.
-                              </p>
-                              <ul class="list-inline item-details">
-                                  <li>Client:
-                                      <strong><a
-                                          href="http://skyo.com">Skyo</a>
-                                      </strong>
-                                  </li>
-                                  <li>Date:
-                                      <strong>2011-2014</strong>
-                                  </li>
-                                  <li>Service:
-                                      <strong>Web Development</strong>
-                                  </li>
-                              </ul>
-                            </div>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Impact Plastics</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/impactplastics.png" class="img-responsive img-centered" alt="">
-                            <div align="left">
-                              <p>
-                                <a
-                                  href="http://www.impactinnovates.com">Impact
-                                  Plastics</a> was in need of an Asset
-                                tracking application to help manage the
-                                repairs of their large inventory of waste
-                                containers. Chip delivered by building
-                                a hybrid app that supported barcode
-                                scanning for identifying the containers,
-                                geolocation capabilities to support
-                                address lookup and map integration, and
-                                the ability to associate photos with
-                                individual container repairs.
-                              </p>
-                              <p>
-                                The app was built for the web and
-                                <strong>iOS</strong> using <strong>Meteor</strong>,
-                                <strong>Javascript (ES2015)</strong> and
-                                <strong>React</strong>, backed by <strong>MongoDB</strong>
-                                on a <strong>Linux</strong> server. The <a
-                                  href="https://itunes.apple.com/us/app/bintracker/id1092331020?mt=8">Bin
-                                  Tracker</a> app is currently available for free in the
-                                AppStore for all Impact Plastics customers.
-                              </p>
-                              <ul class="list-inline item-details">
-                                  <li>Client:
-                                      <strong>
-                                        <a href="http://www.impactinnovates.com">Impact Plastics</a>
-                                      </strong>
-                                  </li>
-                                  <li>Date:
-                                      <strong>2016</strong>
-                                  </li>
-                                  <li>Service:
-                                      <strong>Web Development</strong>
-                                  </li>
-                              </ul>
-                            </div>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Bent Media</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/bentmedia.png" class="img-responsive img-centered" alt="">
-                            <div align="left">
-                              <p>
-                                Early in his career, Chip had the good
-                                fortune to be a part of <a
-                                href="http://bentmedia.com">Bent Media</a>,
-                                one of the leading web design agencies in
-                                the south. This allowed him the opportunity
-                                to work on great sites such as <a
-                                href="http://tabasco.com">Tabasco ®</a>, <a
-                                href="http://oreck.com">Oreck vacuums</a>
-                                and <a href="http://nevilles.com">The
-                                Neville Brothers</a>, using his skills in
-                                <strong>Perl/CGI</strong> programming,
-                                <strong>UNIX ® systems
-                                administration</strong> and
-                                <strong>HTML/CSS</strong>markup.
-                              </p>
-                              <ul class="list-inline item-details">
-                                  <li>Client:
-                                      <strong>
-                                        <a href="http://bentmedia.com">Bent Media</a>
-                                      </strong>
-                                  </li>
-                                  <li>Date:
-                                      <strong>1996-2000</strong>
-                                  </li>
-                                  <li>Service:
-                                      <strong>Web Development</strong>
-                                  </li>
-                              </ul>
-                            </div>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Pure Charity</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/purecharity.png" class="img-responsive img-centered" alt="">
-                            <p>
-                              In 2014 <a
-                                href="http://purecharity.com">Pure
-                                Charity</a> asked Chip to assist
-                              them with various Systems Administration
-                              and DevOps services for a several of their
-                              their <strong>Linux</strong>-based servers. In addition
-                              to spinning up numerous servers, Chip also
-                              advised on best practices for writing
-                              <strong>Ruby on Rails</strong> most
-                              efficiently, as well as how to best test that
-                              code through Test-Driven Development (TDD)
-                              practices using the <strong>RSpec</strong>
-                              and <strong>Capybara</strong> testing tools.
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>
-                                      <a href="http://purecharity.com">Pure Charity</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>2014</strong>
-                                </li>
-                                <li>Service:
-                                    <strong>
-                                      Systems Administration
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Coffee Cup Software</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/coffeecup.png" class="img-responsive img-centered" alt="">
-                            <div align="left">
-                              <p>
-                                <a href="http://coffeecup.com">CoffeeCup
-                                Software</a>
-                                are the creators of an extremely popular
-                                HTML Editor which has been one of the best
-                                in the market for many years. Chip has
-                                assisted them with writing web
-                                applications in <strong>Perl</strong> and
-                                    <strong>PHP</strong> for
-                                projects associated with both
-                                <a href="http://tucows.com">Tucows</a>
-                                and
-                                <a href="https://www.bluedomino.com/">Blue
-                                  Domino</a>.
-                              </p>
-                              <ul class="list-inline item-details">
-                                  <li>Client:
-                                      <strong><a
-                                          href="http://coffeecup.com">Coffee Cup Software</a>
-                                      </strong>
-                                  </li>
-                                  <li>Date:
-                                      <strong>2001-2002</strong>
-                                  </li>
-                                  <li>Service:
-                                      <strong>Web Development</strong>
-                                  </li>
-                              </ul>
-                            </div>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  <section class="section wrap" id="history">
+    <p class="section-label"><span class="sigil">$</span>history</p>
+    <ol class="history-list">
 
-	<script type="text/javascript">
-    const host = window.location.host;
-    console.log("host", host);
-    if (host == "unix.chipcastle.com") {
-      window.location.href = "https://www.unixcasts.com";
-    }
-	</script>
+      <li class="history-item">
+        <div class="history-date mono">2014–2024</div>
+        <div>
+          <h3 class="history-title"><a href="https://www.unixcasts.com">unixcasts.com</a></h3>
+          <p class="history-desc">Built and ran a learning site teaching the Unix command line.</p>
+          <p class="tags"><span class="tag">Ruby on Rails</span></p>
+        </div>
+      </li>
 
-	<script type="text/javascript">
-		function downloadJSAtOnload() {
-			var element = document.createElement("script");
-			element.src = "js/scripts.min.js";
-			document.body.appendChild(element);
-		}
-		if (window.addEventListener)
-			window.addEventListener("load", downloadJSAtOnload, false);
-		else if (window.attachEvent)
-			window.attachEvent("onload", downloadJSAtOnload);
-		else window.onload = downloadJSAtOnload;
-	</script>
+      <li class="history-item">
+        <div class="history-date mono">2016</div>
+        <div>
+          <h3 class="history-title"><a href="http://www.impactinnovates.com">Impact Plastics</a></h3>
+          <p class="history-desc">Delivered Bin Tracker, a hybrid asset-tracking app with barcode scanning, geolocation and map integration, and photo logging for repairs across a large fleet of waste containers. Shipped free to Impact Plastics customers on the <a href="https://itunes.apple.com/us/app/bintracker/id1092331020?mt=8">App Store</a>.</p>
+          <p class="tags"><span class="tag">Meteor</span><span class="tag">React</span><span class="tag">MongoDB</span><span class="tag">iOS</span></p>
+        </div>
+      </li>
+
+      <li class="history-item">
+        <div class="history-date mono">2014</div>
+        <div>
+          <h3 class="history-title"><a href="http://purecharity.com">Pure Charity</a></h3>
+          <p class="history-desc">Systems administration and DevOps across several Linux servers, plus guidance on writing efficient Rails and testing it with RSpec and Capybara under TDD.</p>
+          <p class="tags"><span class="tag">Linux</span><span class="tag">Rails</span><span class="tag">RSpec</span></p>
+        </div>
+      </li>
+
+      <li class="history-item">
+        <div class="history-date mono">2011–2014</div>
+        <div>
+          <h3 class="history-title"><a href="http://skyo.com">Skyo</a></h3>
+          <p class="history-desc">Worked a large Rails codebase over several years — refined the Git branching workflow around pull requests, cut code complexity, and migrated CI from a customized Jenkins setup to Semaphore.</p>
+          <p class="tags"><span class="tag">Rails</span><span class="tag">Git</span><span class="tag">CI</span></p>
+        </div>
+      </li>
+
+      <li class="history-item">
+        <div class="history-date mono">2003–2015</div>
+        <div>
+          <h3 class="history-title"><a href="http://www.med.nyu.edu/radiology/department-radiology">NYU School of Medicine</a></h3>
+          <p class="history-desc">Built, customized, and hosted scheduling software for the Radiology Department, managing time slots across four MRI magnets and the billing tied to each research protocol.</p>
+          <p class="tags"><span class="tag">Perl</span><span class="tag">Linux</span></p>
+        </div>
+      </li>
+
+      <li class="history-item">
+        <div class="history-date mono">2001–2002</div>
+        <div>
+          <h3 class="history-title"><a href="http://coffeecup.com">Coffee Cup Software</a></h3>
+          <p class="history-desc">Wrote web applications for projects tied to Tucows and Blue Domino, for the makers of one of the longest-running HTML editors on the market.</p>
+          <p class="tags"><span class="tag">Perl</span><span class="tag">PHP</span></p>
+        </div>
+      </li>
+
+      <li class="history-item">
+        <div class="history-date mono">1996–2000</div>
+        <div>
+          <h3 class="history-title"><a href="http://bentmedia.com">Bent Media</a></h3>
+          <p class="history-desc">Early career at one of the leading web design agencies in the South, working on sites for Tabasco, Oreck vacuums, and The Neville Brothers.</p>
+          <p class="tags"><span class="tag">Perl/CGI</span><span class="tag">Unix admin</span><span class="tag">HTML/CSS</span></p>
+        </div>
+      </li>
+
+    </ol>
+  </section>
+
+  <section class="section wrap" id="about">
+    <p class="section-label"><span class="sigil">$</span>about</p>
+    <div class="about-grid">
+      <div class="measure">
+        <p>Since 1994, Chip Castle has been honing his craft of web and software development, working across a wide variety of systems and tools. These days that means mostly Unix and Ruby on Rails — but three decades in, the through-line has always been comfort with the whole stack, not just one layer of it.</p>
+      </div>
+      <dl class="about-facts">
+        <dt>Focus</dt>
+        <dd>Unix systems, Ruby on Rails</dd>
+        <dt>Building since</dt>
+        <dd>1994</dd>
+        <dt>Code</dt>
+        <dd><a href="https://github.com/chip">github.com/chip</a></dd>
+      </dl>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© Chip Castle Dot Com, Inc. 2016–2026</span>
+    <nav aria-label="Footer" class="footer-links">
+      <a href="software.html">Software</a>
+      <a href="https://github.com/chip">GitHub</a>
+    </nav>
+  </div>
+</footer>
 
 </body>
-
 </html>
